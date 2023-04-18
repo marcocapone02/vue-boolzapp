@@ -1,5 +1,245 @@
+/*GENERAL*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  overflow: hidden;
+  background: rgb(217,219,212);
+  background: linear-gradient(0deg, rgba(217,219,212,1) 85%, rgba(0,150,136,1) 85%); 
+}
+
+img{
+  width: 60px;
+  height: 60px;
+  margin: 0 15px;
+  border-radius: 50%;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+main{
+  display: flex;
+  width: 85%;
+  height: 1000px;
+  border: 1px solid lightgray;
+}
+
+aside{
+  background-color: white;
+  width: 30%;
+}
+
+.user, .last-login{
+  height: 86px;
+  border: 1px solid lightgray;
+  background-color: whitesmoke;
+}
+
+.user{
+  display: flex;
+  justify-content: space-between;
+}
+
+.user .info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-right: 15px;
+  color:lightgray;
+}
+
+.icon i{
+  margin: 0 14px;
+}
+
+.notifications{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90px;
+  background-color: skyblue;
+}
+
+.notifications i{
+  margin-left: 20px;
+  padding: 20px 18px;
+  border-radius: 50%;
+  color:skyblue;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.text-notifications{
+  margin: 0 20px;
+}
+
+.notifications .text-notifications span:last-child{
+  text-decoration: underline;
+  color: gray;
+}
+
+.searchbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  background-color: whitesmoke;
+
+}
+
+.searchbar button{
+  border-style: none;
+  height: 46px;
+  width: 15%;
+  border: 1px solid whitesmoke;
+  border-right: white;
+  cursor: pointer;
+  color:gray;
+  background-color: white;
+}
+
+.searchbar input{
+  width: 80%;
+  height: 80%;
+  outline:none;
+  padding: 10px;
+  border: 1px solid whitesmoke;
+}
+
+.contacts{
+  width: 100%;
+}
+
+.contacts li{
+  display: flex;
+  height: 80px;
+  margin: 8px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info{
+  margin: 5px;
+  width: 100%;
+}
+
+.info .content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.info span:first-child{
+  font-size: 18px;
+}
+
+.info span:last-child{
+  font-size: 14px;
+  color: gray;
+}
+
+.section{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 70%;
+  overflow:auto;
+  background-image: url('../img/mine.jpg');
+}
+
+.last-login{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-message{
+  height: 80%;
+}
+
+.send-message{
+  margin-left: 30px ;
+}
+
+.received-message{
+  margin-left: 750px ;
+}
+
+.message{
+  width: 350px;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 8px 0;
+}
+
+.message.send{
+  background-color:#D5F9BA;
+
+}
+
+.message.received{
+  background-color: white;
+
+}
+
+.info-message{
+  color: #C5CCCC;
+  display:flex;
+  justify-content: flex-end;
+}
+
+.info-message span{
+  margin-right: 10px
+}
+
+.info-message span:first-child{
+  color:skyblue;
+}
+
+.input-area i{
+  margin: 0 42px;
+  font-size: 24px;
+  color: gray;
+}
+
+.input-area{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border: 1px solid lightgrey;
+  background-color: whitesmoke;
+}
+
+.input-area input{
+  width: 90%;
+  height: 80%;
+  outline:none;
+  border-style:none;
+  border-radius: 5px;
+  padding: 15px;
 }

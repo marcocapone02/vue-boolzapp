@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
@@ -17,8 +18,190 @@
 
 <body>
 
-  <script src="assets/js/scipt.js"></script>
+<div id="app">
+
+  <div class="container">
+
+    <main>
+
+      <aside>
+
+        <div class="user">
+
+          <div class="user-info">
+            <img src="assets/img/avatar_io.jpg" alt="">
+            <span>Sofia</span>
+          </div>
+
+          <div class="icon">
+            <i class="fa-solid fa-circle-notch"></i>
+            <i class="fa-solid fa-message"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          
+        </div>
+
+        <div class="notifications">
+
+          <i class="fa-solid fa-bell-slash"></i> 
+
+          <div class="text-notifications">
+
+            <span>Ricevi notifiche di nuovi messaggi</span> <br>
+            <span>Attiva notifiche desktop</span>
+
+          </div>
+
+        </div>
+
+        <div class="searchbar">
+
+          <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <input type="text" placeholder="Cerca o inizia una nuova chat">
+        </div>
+
+        <div class="contacts">
+
+          <ul>
+
+            <li v-for="(contact, index) in contacts">
+
+              <img :src="contact.avatar" alt="">
+
+              <div class="info">
+
+                <div class="content">
+
+                  <span>{{contact.name}}</span>
+
+                  <span>12:00</span>
+
+                </div>
+
+                <span>Ultimo messaggio inviato</span>
+
+              </div>
+
+            </li>
+
+          </ul>
+
+          
+        </div>
+
+      </aside>
+
+      <div class="section">
+
+        <div class="last-login">
+
+          <div class="contact">
+
+            <img src="assets/img/avatar_1.jpg" alt="">
+
+            <div class="info">
+
+              <span>Michele</span> <br>
+              
+              <span>Ultimo accesso {{date}} alle {{clock}}</span>
+              
+            </div>
+
+          </div>
+
+          <div class="icon">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-paperclip"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+
+          </div>
+
+        </div>
+
+        <div class="container-message">
+
+          <div class="send-message">
+
+            <div class="message send">
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nisi iusto, nesciunt natus itaque voluptatum voluptates hic odit voluptatem quam!</p> 
+
+              <div class="info-message">
+
+                <span>{{clock}}</span>
+                <span><i class="fa-solid fa-check-double"></i></span>
+
+              </div>
+            </div>
+            
+            <div class="message send">
+
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora accusamus quo dolor?</p>
+
+              <div class="info-message">
+
+                <span>{{clock}}</span>
+                <span><i class="fa-solid fa-check-double"></i></span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="received-message">
+
+            <div class="message received">
+
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate laudantium sequi corporis omnis, ipsum soluta minus obcaecati, dolores quod, porro earum. Dolore blanditiis quod nemo quisquam, hic dolorem debitis maiores.
   
+              <div class="info-message">
+
+                <span>{{clock}}</span>
+                <span><i class="fa-solid fa-check-double"></i></span>
+
+              </div>
+
+            </div>
+
+            <div class="message received">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+  
+              <div class="info-message">
+
+                <span>{{clock}}</span>
+                <span><i class="fa-solid fa-check-double"></i></span>
+
+              </div>
+
+            </div>
+            
+          </div>
+
+        </div>
+
+        <div class="input-area">
+          <i class="fa-regular fa-face-smile"></i>
+
+          <input type="text" placeholder="Scrivi un messaggio">
+
+          <i class="fa-solid fa-microphone"></i>
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</div>
+
+  <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
